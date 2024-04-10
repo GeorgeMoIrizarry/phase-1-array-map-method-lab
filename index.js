@@ -15,25 +15,13 @@ const titleCased = () => {
   return tutorials.map((vidStr) => {
     const strArr = vidStr.split(' ')
     const indiv = strArr.map((words) => 
-      words.charAt(0).toUpperCase() + words.slice(1)     
-    )
+      words.charAt(0).toUpperCase() + words.slice(1)
+      )
     const newArr = indiv.join(' ')
     return newArr
   })
   
 }
-console.log(titleCased())
-// const titleCased = () => {
-//   return tutorials.map((line) => {
-//     const tokens = line.split(" ");
-//     const capitalizedTokens = tokens.map(
-//       (token) => token.charAt(0).toUpperCase() + token.slice(1)
-//     );
-//     const response = capitalizedTokens.join(" ");
-//     return response;
-//   });
-// };
-// console.log(titleCased())
 
 
 
